@@ -1,6 +1,5 @@
 module Decorators
   require 'decorators/paths'
-  require 'decorators/railtie'
 
   class << self
     def load!(cache_classes)
@@ -40,5 +39,6 @@ module Decorators
       ['app', 'decorators', '*', '**', '*_decorator.rb']
     end
   end
-
 end
+
+require 'decorators/railtie'
